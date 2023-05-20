@@ -1,0 +1,245 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+.header
+{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0px;
+    right:0px;
+    z-index: 100;
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(247, 243, 243);
+    background-color: white;
+}
+.left-section
+{
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu
+{
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.utube-logo
+{
+    height: 20px;
+    cursor: pointer;
+}
+.middle-section
+{
+    flex:1;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.search-bar
+{
+    flex: 1;
+    height: 34px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192) ;
+    border-radius: 5px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.search-bar::placeholder
+{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+
+.search-button
+{
+    height: 37px;
+    border-radius: 20px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style:solid ;
+    border-color: rgb(192, 192, 192) ;
+    margin-left: -60px;
+}
+.search-icon
+{
+    height: 25px;
+    margin-top: 4px ;
+}
+.voice-button
+{
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-left: 5px;
+    background-color:white; 
+    cursor: pointer;
+}
+.voice-button:hover,.bell-icon:hover,.upload-icon:hover{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+}
+.voice-icon
+{
+    height: 24px;
+    margin-top: 4px;
+}
+.right-section
+{
+    width: 130px;
+    margin-right: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.upload-icon
+{
+    padding: 5px 5px;
+    height: 24px;
+    cursor: pointer;
+}
+.bell-icon
+{
+    padding: 5px 5px;
+    height: 24px;
+    cursor: pointer;
+}
+.notifications-icon-container
+{
+    position: relative;
+}
+.notifications-count
+{
+    position: absolute;
+    top:-1px;
+    right: -1px;
+    background-color: rgb(193, 5, 5);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.pic-icon
+{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.buttons-top
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 55px;
+    right: 2px;
+    left: 75px;
+    position: fixed;
+    z-index: 150;
+    background-color: white;
+    margin-bottom: 30px;
+    overflow-x: scroll;
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+.buttons-top::-webkit-scrollbar{
+    display: none;
+}
+.ALL{
+    display: flex;
+    flex: 0.1;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 6px 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    justify-content: space-evenly;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.BTS
+{
+    display: flex;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    font: bolder;
+    color: black;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 9px 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex: 0.2;
+    margin-top: 20px;
+    background-color: rgb(244, 240, 240);
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 7px;
+    transition: opacity 0.15s;
+    
+}
+.BTS:hover
+{
+    background-color: rgb(215, 210, 210);
+}
+.BTS:active
+{
+    display: flex;
+    flex: 0.1;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 9px 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    background-color:rgb(18, 17, 17);
+    color: white;
+    justify-content: space-evenly;
+    border: none;
+}
+.right-scroll
+{
+    position: fixed;
+    right: 0;
+    background: linear-gradient(to left,#fcfbfb 70%,transparent);
+}
+.right-scroll svg{
+    width: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    height: 20px;
+    padding: 8px;
+    cursor:pointer;
+}
+.right-scroll svg:hover,.left-scroll svg:hover{
+    background: rgb(225, 223, 223);
+}
